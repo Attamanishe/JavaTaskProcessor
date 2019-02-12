@@ -1,0 +1,9 @@
+processors/diagnostically/DiagnosticsTaskProcessorsManager.class
+processors/diagnostically/IDiagnostically.class
+processors/changed/ChangedTaskProcessor.class
+processors/load/LoadBalancingTaskProcessor$LoadChecker.class
+processors/base/IProcessor.class
+processors/base/ProcessorsManager.class
+processors/load/LoadBalancingTaskProcessor.class
+processors/diagnostically/DiagnosticallyTaskProcessor.class
+processors/base/TaskProcessor.class

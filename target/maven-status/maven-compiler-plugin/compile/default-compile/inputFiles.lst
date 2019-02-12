@@ -1,8 +1,8 @@
-/Users/macbookpro/Projects/attaserver/javataskprocessor/src/main/java/processors/diagnostically/DiagnosticsTaskProcessorsManager.java
-/Users/macbookpro/Projects/attaserver/javataskprocessor/src/main/java/processors/diagnostically/IDiagnostically.java
-/Users/macbookpro/Projects/attaserver/javataskprocessor/src/main/java/processors/changed/ChangedTaskProcessor.java
-/Users/macbookpro/Projects/attaserver/javataskprocessor/src/main/java/processors/base/IProcessor.java
-/Users/macbookpro/Projects/attaserver/javataskprocessor/src/main/java/processors/load/LoadBalancingTaskProcessor.java
-/Users/macbookpro/Projects/attaserver/javataskprocessor/src/main/java/processors/diagnostically/DiagnosticallyTaskProcessor.java
-/Users/macbookpro/Projects/attaserver/javataskprocessor/src/main/java/processors/base/ProcessorsManager.java
-/Users/macbookpro/Projects/attaserver/javataskprocessor/src/main/java/processors/base/TaskProcessor.java
+/Users/macbookpro/Projects/JavaTaskProcessor/src/main/java/processors/base/ProcessorsManager.java
+/Users/macbookpro/Projects/JavaTaskProcessor/src/main/java/processors/diagnostically/DiagnosticsTaskProcessorsManager.java
+/Users/macbookpro/Projects/JavaTaskProcessor/src/main/java/processors/base/IProcessor.java
+/Users/macbookpro/Projects/JavaTaskProcessor/src/main/java/processors/changed/ChangedTaskProcessor.java
+/Users/macbookpro/Projects/JavaTaskProcessor/src/main/java/processors/load/LoadBalancingTaskProcessor.java
+/Users/macbookpro/Projects/JavaTaskProcessor/src/main/java/processors/base/TaskProcessor.java
+/Users/macbookpro/Projects/JavaTaskProcessor/src/main/java/processors/diagnostically/IDiagnostically.java
+/Users/macbookpro/Projects/JavaTaskProcessor/src/main/java/processors/diagnostically/DiagnosticallyTaskProcessor.java

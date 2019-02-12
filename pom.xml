@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>java-task-processor</groupId>
-    <artifactId>TastProcessor</artifactId>
+    <artifactId>TaskProcessor</artifactId>
     <version>1.0.1</version>
     <build>
         <plugins>

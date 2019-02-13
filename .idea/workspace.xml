@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f6310e6-b447-4c78-af8a-e4a03dbbdd9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/processors/changeable/ChangeableTaskProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/processors/base/IProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/base/IProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/processors/base/ProcessorsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/base/ProcessorsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/processors/base/TaskProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/base/TaskProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/processors/changed/ChangedTaskProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticallyTaskProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticallyTaskProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/processors/diagnostically/IDiagnostically.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/diagnostically/IDiagnostically.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/processors/load/LoadBalancingTaskProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/load/LoadBalancingTaskProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/processors/changed/ChangedTaskProcessor.class" beforeDir="false" />
-    </list>
+    <list default="true" id="1f6310e6-b447-4c78-af8a-e4a03dbbdd9e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +13,7 @@
     <session id="-1452094519">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="4" />
@@ -94,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticsTaskProcessorsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
+            <state relative-caret-position="68">
               <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
             </state>
           </provider>
@@ -123,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/processors/changeable/ChangeableTaskProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-262">
-              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1024#1025#0" expanded="true" />
@@ -133,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticallyTaskProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-25">
+            <state relative-caret-position="203">
               <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
               <folding>
                 <element signature="e#807#808#0" expanded="true" />
@@ -152,7 +140,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/IDiagnostically.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -324,7 +312,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550093724495" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550093909581" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -365,7 +353,7 @@
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -420,7 +408,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/IDiagnostically.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -454,7 +442,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/processors/changeable/ChangeableTaskProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-262">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1024#1025#0" expanded="true" />
@@ -470,16 +458,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticsTaskProcessorsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticallyTaskProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
+        <state relative-caret-position="203">
           <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
           <folding>
             <element signature="e#807#808#0" expanded="true" />
@@ -487,6 +468,13 @@
             <element signature="e#897#898#0" expanded="true" />
             <element signature="e#927#928#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticsTaskProcessorsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
         </state>
       </provider>
     </entry>

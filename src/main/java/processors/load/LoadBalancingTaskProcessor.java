@@ -68,6 +68,23 @@ public abstract class LoadBalancingTaskProcessor implements IProcessor
         checker = new LoadChecker(groupName + " load checker");
     }
 
+    @Override
+    public void pause()
+    {
+        for (int i = 0; i < processors.size(); i++)
+        {
+            processors.get(i).pause();
+        }
+    }
+
+    @Override
+    public void resume()
+    {
+        for (int i = 0; i < processors.size(); i++)
+        {
+            processors.get(i).resume();
+        }
+    }
 
     @Override
     public void start()

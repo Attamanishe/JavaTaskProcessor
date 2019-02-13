@@ -10,7 +10,7 @@ public interface IDiagnostically
     /**
      * @return name of diagnostically group
      */
-    String getDiagnosticallyGroup();
+    String getGroupName();
 
     /**
      * @return true if processor is working

@@ -2,7 +2,7 @@ package processors.load;
 
 import processors.base.IProcessor;
 import processors.base.TaskProcessor;
-import processors.changed.ChangedTaskProcessor;
+import processors.changeable.ChangeableTaskProcessor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 /*
 <h1>LoadBalancingTaskProcessor</h1>
-The implementation gives you TaskProcessor that can make new thread to perform task if some threads cant perform task fast
+The implementation gives you TaskProcessor that can make new thread to execute task if some threads cant execute task fast
  */
 public abstract class LoadBalancingTaskProcessor implements IProcessor
 {
@@ -22,11 +22,11 @@ public abstract class LoadBalancingTaskProcessor implements IProcessor
     {
         public LoadChecker(String groupName)
         {
-            super(groupName);
+            super(groupName, timeToUpdateLoadValue);
         }
 
         @Override
-        protected int task()
+        protected void task()
         {
             if (processors.size() < maxThreadsCount)
             {
@@ -39,28 +39,16 @@ public abstract class LoadBalancingTaskProcessor implements IProcessor
                     stopWorker();
                 }
             }
-            return timeToUpdateLoadValue;
         }
     }
 
-    /**
-     * The task that will performing in threads
-     *
-     * @return delay time before next process update
-     */
-    protected abstract int process();
-
-    /**
-     * @return the value to determine load value of current processor
-     */
-    protected abstract int getLoadValue();
-
-    private List<ChangedTaskProcessor> processors;
-    private Queue<ChangedTaskProcessor> processorsPool;
+    private List<ChangeableTaskProcessor> processors;
+    private Queue<ChangeableTaskProcessor> processorsPool;
     private String groupName;
+    private LoadChecker checker;
     private int timeToUpdateLoadValue;
     private int maxThreadsCount;
-    private LoadChecker checker;
+    private int sleepTime;
 
     /**
      * Constructor
@@ -69,47 +57,23 @@ public abstract class LoadBalancingTaskProcessor implements IProcessor
      * @param timeForUpdateLoadValue the time between checking of load value
      * @param groupName              the name of thread that will be open for this task
      */
-    protected LoadBalancingTaskProcessor(int maxThreadsCount, int timeForUpdateLoadValue, String groupName)
+    protected LoadBalancingTaskProcessor(int maxThreadsCount, int timeForUpdateLoadValue, String groupName, int sleepTime)
     {
         this.timeToUpdateLoadValue = timeForUpdateLoadValue;
         this.maxThreadsCount = maxThreadsCount;
         this.groupName = groupName;
         processors = new ArrayList<>();
         processorsPool = new ConcurrentLinkedQueue<>();
+        this.sleepTime = sleepTime;
         checker = new LoadChecker(groupName + " load checker");
+    }
+
+
+    @Override
+    public void start()
+    {
+        checker.start();
         addWorker();
-    }
-
-    private void addWorker()
-    {
-        if (processorsPool.isEmpty())
-        {
-            processors.add(
-                    new ChangedTaskProcessor(groupName,
-                            o -> process()));
-        } else
-        {
-            ChangedTaskProcessor processor = processorsPool.poll();
-            processor.setTaskToPerform(o -> process());
-            processors.add(processor);
-        }
-    }
-
-    private void stopWorker()
-    {
-        if (processors.size() > 1)
-        {
-            int last = processors.size() - 1;
-            ChangedTaskProcessor processor = processors.remove(last);
-            if (processorsPool.size() > MAX_POOL_SIZE)
-            {
-                processor.stop();
-            } else
-            {
-                processor.stopPerforming();
-                processorsPool.add(processor);
-            }
-        }
     }
 
     @Override
@@ -123,6 +87,61 @@ public abstract class LoadBalancingTaskProcessor implements IProcessor
         for (int i = 0; i < processorsPool.size(); i++)
         {
             processorsPool.poll().stop();
+        }
+    }
+
+    /**
+     * The task that will performing in threads
+     */
+    protected abstract void process();
+
+    /**
+     * @return the value to determine load value of current processor
+     */
+    protected abstract int getLoadValue();
+
+    private void addWorker()
+    {
+        ChangeableTaskProcessor processor;
+        if (processorsPool.isEmpty())
+        {
+            processor = new ChangeableTaskProcessor(
+                    groupName,
+                    o ->
+                    {
+                        process();
+                        return null;
+                    },
+                    sleepTime);
+            processor.start();
+        } else
+        {
+            processor = processorsPool.poll();
+            processor.setTaskToExecute(
+                    o ->
+                    {
+                        process();
+                        return null;
+                    },
+                    sleepTime);
+        }
+        processors.add(processor);
+    }
+
+    private void stopWorker()
+    {
+        if (processors.size() > 1)
+        {
+            int last = processors.size() - 1;
+            ChangeableTaskProcessor processor = processors.remove(last);
+            if (processorsPool.size() > MAX_POOL_SIZE)
+            {
+                processor.stop();
+            } else
+            {
+                processor.stopCurrentTask();
+                processorsPool.add(processor);
+            }
         }
     }
 }

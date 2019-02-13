@@ -27,4 +27,21 @@ public class ProcessorsManager
     {
         processors.add(processor);
     }
+
+    public void removeProcessor(IProcessor processor)
+    {
+        if (processors.contains(processor))
+        {
+            processors.remove(processor);
+        }
+    }
+
+    public void stopProcessors()
+    {
+        for (int i = 0; i < processors.size(); i++)
+        {
+            processors.get(i).stop();
+        }
+        processors.clear();
+    }
 }

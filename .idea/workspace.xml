@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f6310e6-b447-4c78-af8a-e4a03dbbdd9e" name="Default Changelist" comment="" />
+    <list default="true" id="1f6310e6-b447-4c78-af8a-e4a03dbbdd9e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/target/classes/processors/load/LoadBalancingTaskProcessor$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-task-processor/TaskProcessor/1.0.1/TaskProcessor-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-task-processor/TaskProcessor/1.0.1/TaskProcessor-1.0.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-task-processor/TaskProcessor/1.0.1/TaskProcessor-1.0.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-task-processor/TaskProcessor/1.0.1/TaskProcessor-1.0.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-task-processor/TaskProcessor/1.0.1/TaskProcessor-1.0.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-task-processor/TaskProcessor/1.0.1/TaskProcessor-1.0.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-task-processor/TaskProcessor/1.1/TaskProcessor-1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/java-task-processor/TaskProcessor/1.1/TaskProcessor-1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-task-processor/TaskProcessor/1.1/TaskProcessor-1.1.jar.md5" beforeDir="false" afterPath="$PROJECT_DIR$/java-task-processor/TaskProcessor/1.1/TaskProcessor-1.1.jar.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-task-processor/TaskProcessor/1.1/TaskProcessor-1.1.jar.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/java-task-processor/TaskProcessor/1.1/TaskProcessor-1.1.jar.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-task-processor/TaskProcessor/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-task-processor/TaskProcessor/maven-metadata.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-task-processor/TaskProcessor/maven-metadata.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/java-task-processor/TaskProcessor/maven-metadata.xml.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-task-processor/TaskProcessor/maven-metadata.xml.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/java-task-processor/TaskProcessor/maven-metadata.xml.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/processors/load/LoadBalancingTaskProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/load/LoadBalancingTaskProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TaskProcessor-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TaskProcessor-1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TaskProcessor-1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/processors/load/LoadBalancingTaskProcessor$LoadChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/processors/load/LoadBalancingTaskProcessor$LoadChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/processors/load/LoadBalancingTaskProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/processors/load/LoadBalancingTaskProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +35,10 @@
     <session id="-1452094519">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="3" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -34,26 +56,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1099" />
+          <entry key="java" value="1162" />
           <entry key="pom" value="3" />
-          <entry key="xml" value="10" />
+          <entry key="xml" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1099" />
-          <entry key="XML" value="13" />
+          <entry key="JAVA" value="1162" />
+          <entry key="XML" value="21" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="345">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -70,22 +92,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/processors/base/TaskProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-244">
+            <state relative-caret-position="90">
               <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-              <folding>
-                <element signature="e#975#976#0" expanded="true" />
-                <element signature="e#1006#1007#0" expanded="true" />
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticsTaskProcessorsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="270">
               <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
             </state>
           </provider>
@@ -94,14 +110,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/processors/load/LoadBalancingTaskProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-286">
-              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+            <state relative-caret-position="1833">
+              <caret line="159" column="34" selection-start-line="159" selection-start-column="34" selection-end-line="159" selection-end-column="34" />
               <folding>
                 <element signature="class#LoadChecker#0;class#LoadBalancingTaskProcessor#0" />
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="method#addWorker#0;class#LoadBalancingTaskProcessor#0" />
-                <element signature="method#stopWorker#0;class#LoadBalancingTaskProcessor#0" />
+                <element signature="e#3629#3630#0" expanded="true" />
+                <element signature="e#3680#3681#0" expanded="true" />
+                <element signature="e#3773#3774#0" expanded="true" />
+                <element signature="e#3822#3823#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,12 +126,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/processors/changeable/ChangeableTaskProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-262">
+            <state relative-caret-position="135">
               <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1024#1025#0" expanded="true" />
-                <element signature="e#1047#1048#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,14 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticallyTaskProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
+            <state relative-caret-position="315">
               <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-              <folding>
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#897#898#0" expanded="true" />
-                <element signature="e#927#928#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -148,7 +156,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/processors/base/ProcessorsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
+            <state relative-caret-position="525">
               <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
               <folding>
                 <element signature="e#457#458#0" expanded="true" />
@@ -179,8 +187,8 @@
         <option value="$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticallyTaskProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/processors/changeable/ChangedTaskProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/processors/changeable/ChangeableTaskProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/processors/load/LoadBalancingTaskProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/processors/base/ProcessorsManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/processors/load/LoadBalancingTaskProcessor.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -223,24 +231,6 @@
             <path>
               <item name="TastProcessor" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaTaskProcessor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TastProcessor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTaskProcessor" type="462c0819:PsiDirectoryNode" />
-              <item name="java-task-processor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TastProcessor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTaskProcessor" type="462c0819:PsiDirectoryNode" />
-              <item name="java-task-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="TaskProcessor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TastProcessor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTaskProcessor" type="462c0819:PsiDirectoryNode" />
-              <item name="java-task-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="TaskProcessor" type="462c0819:PsiDirectoryNode" />
-              <item name="1.0.1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TastProcessor" type="b2602c69:ProjectViewProjectNode" />
@@ -342,9 +332,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29886913" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3085622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -369,7 +358,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.15751211" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="7" visible="true" weight="0.15751211" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -377,13 +366,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/java-task-processor/TastProcessor/TastProcessor/1.0/TastProcessor-1.0.pom" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/processors/base/IProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -391,17 +373,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/processors/load/LoadBalancingTaskProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/processors/base/IProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        <state relative-caret-position="300">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/processors/base/TaskProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticsTaskProcessorsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/processors/changeable/ChangeableTaskProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
           <folding>
-            <element signature="class#LoadChecker#0;class#LoadBalancingTaskProcessor#0" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="method#addWorker#0;class#LoadBalancingTaskProcessor#0" />
-            <element signature="method#stopWorker#0;class#LoadBalancingTaskProcessor#0" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticallyTaskProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -412,22 +418,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/processors/base/TaskProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/processors/base/ProcessorsManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
+        <state relative-caret-position="525">
           <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
           <folding>
             <element signature="e#457#458#0" expanded="true" />
@@ -439,42 +432,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/processors/changeable/ChangeableTaskProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/processors/load/LoadBalancingTaskProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-262">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="1833">
+          <caret line="159" column="34" selection-start-line="159" selection-start-column="34" selection-end-line="159" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="class#LoadChecker#0;class#LoadBalancingTaskProcessor#0" />
+            <element signature="e#3629#3630#0" expanded="true" />
+            <element signature="e#3680#3681#0" expanded="true" />
+            <element signature="e#3773#3774#0" expanded="true" />
+            <element signature="e#3822#3823#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticallyTaskProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-          <folding>
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/processors/diagnostically/DiagnosticsTaskProcessorsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="345">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="35" />
         </state>
       </provider>
     </entry>

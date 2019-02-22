@@ -3,6 +3,7 @@ package processors.load;
 import processors.base.IProcessor;
 import processors.base.TaskProcessor;
 import processors.changeable.ChangeableTaskProcessor;
+import processors.diagnostically.DiagnosticallyTaskProcessor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,8 +43,8 @@ public abstract class LoadBalancingTaskProcessor implements IProcessor
         }
     }
 
-    private List<ChangeableTaskProcessor> processors;
-    private Queue<ChangeableTaskProcessor> processorsPool;
+    private List<DiagnosticallyTaskProcessor> processors;
+    private Queue<DiagnosticallyTaskProcessor> processorsPool;
     private String groupName;
     private LoadChecker checker;
     private int timeToUpdateLoadValue;
@@ -119,28 +120,28 @@ public abstract class LoadBalancingTaskProcessor implements IProcessor
 
     private void addWorker()
     {
-        ChangeableTaskProcessor processor;
+        DiagnosticallyTaskProcessor processor;
         if (processorsPool.isEmpty())
         {
-            processor = new ChangeableTaskProcessor(
-                    groupName,
-                    o ->
-                    {
-                        process();
-                        return null;
-                    },
-                    sleepTime);
+            processor = new DiagnosticallyTaskProcessor(groupName, sleepTime)
+            {
+                @Override
+                public String getGroupName()
+                {
+                    return groupName;
+                }
+
+                @Override
+                protected void taskCycle()
+                {
+                    process();
+                }
+            };
             processor.start();
         } else
         {
             processor = processorsPool.poll();
-            processor.setTaskToExecute(
-                    o ->
-                    {
-                        process();
-                        return null;
-                    },
-                    sleepTime);
+            processor.resume();
         }
         processors.add(processor);
     }
@@ -150,13 +151,13 @@ public abstract class LoadBalancingTaskProcessor implements IProcessor
         if (processors.size() > 1)
         {
             int last = processors.size() - 1;
-            ChangeableTaskProcessor processor = processors.remove(last);
+            DiagnosticallyTaskProcessor processor = processors.remove(last);
             if (processorsPool.size() > MAX_POOL_SIZE)
             {
                 processor.stop();
             } else
             {
-                processor.stopCurrentTask();
+                processor.pause();
                 processorsPool.add(processor);
             }
         }
